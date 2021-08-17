@@ -493,7 +493,7 @@ body {
 {
     position: relative;
     min-height: 50vh;
-    background: url('https://Mil-House.github.io/working111/img/imglow.jpeg');
+    background: url('https://Mil-House.github.io/Mil-House/img/imglow.jpeg');
     background-size: cover;
     background-position: right;
     display: flex;
@@ -857,7 +857,6 @@ body {
 }
 
 #image-comparison-slider img {
-    border-radius: 0.5rem;
     display: block;
     width: var(--image-comparison-slider-width);
     height: auto;
@@ -868,7 +867,6 @@ body {
 }
   
 #image-comparison-slider .img-wrapper {
-    border-radius: 0.5rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -882,7 +880,6 @@ body {
 }
   
 #image-comparison-slider .img-wrapper img {
-    border-radius: 0.5rem;
     position: absolute;
     top: 0;
     right: 0;
