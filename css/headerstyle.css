@@ -171,14 +171,14 @@ header {
     width: 1.6rem;
     height: 4.4rem;
     /*background: url("https://Mil-House.github.io/Mil-House/img/search.svg") center no-repeat;*/
-    background: url("/img/translate2.png") center no-repeat;
+    background: url("https://Mil-House.github.io/Mil-House/img/translate2.png") center no-repeat;
     cursor: pointer;
 }
 
 .nav-link-bag {
     width: 1.4rem;
     height: 4.4rem;
-    background: url("/img/shop.png") center no-repeat;
+    background: url("https://Mil-House.github.io/Mil-House/img/shop.png") center no-repeat;
     cursor: pointer;
 }
 
