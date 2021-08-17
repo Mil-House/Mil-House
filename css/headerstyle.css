@@ -610,7 +610,7 @@ header {
     /*============ Mobile bag Menu (Start) ============*/
 
     .nav-link-bag {
-        background: url("/img/bag.svg") center no-repeat;
+        background: url("https://mil-house.github.io/Mil-House/img/bag.svg") center no-repeat;
     }
 
     .operation .minibagmenu {
