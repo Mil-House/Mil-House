@@ -857,6 +857,7 @@ body {
 }
 
 #image-comparison-slider img {
+    border-radius: 0.5rem;
     display: block;
     width: var(--image-comparison-slider-width);
     height: auto;
@@ -867,6 +868,7 @@ body {
 }
   
 #image-comparison-slider .img-wrapper {
+    border-radius: 0.5rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -880,6 +882,7 @@ body {
 }
   
 #image-comparison-slider .img-wrapper img {
+    border-radius: 0.5rem;
     position: absolute;
     top: 0;
     right: 0;
