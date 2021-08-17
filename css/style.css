@@ -168,7 +168,7 @@ section, footer {
 
 /*
 body {
-    background-image: url("/img/Sun-Tornado.svg");
+    background-image: url("https://Mil-House.github.io/Mil-House/img/Sun-Tornado.svg");
     background-size: cover;
 }
 */
@@ -179,7 +179,7 @@ body {
 
 /*================ Milhouse-banner  Section ================*/
 .banner {
-    background: url("/img/imagelarge.png");
+    background: url("https://Mil-House.github.io/Mil-House/img/imagelarge.png");
     margin-top: 4.3rem; /*4.4 rem*/
     background-color: #1b1b1b;
 
@@ -302,46 +302,46 @@ body {
 
 @keyframes slide1 { /*0%, 33%, 67% (Large)*/
     0%{
-        background-image: url("/img/imagelarge.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge.png");
     }
     25%{
-        background-image: url("/img/imagelarge4.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge4.png");
     }
     50%{
-        background-image: url("/img/imagelarge5.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge5.png");
     }
     75%{
-        background-image: url("/img/imagelarge6.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge6.png");
     }
 }
 
 /*
 @keyframes slide { /0%, 33%, 67% (Medium)/
     0%{
-        background-image: url("/img/imagelarge.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge.png");
     }
     25%{
-        background-image: url("/img/imagelarge4.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge4.png");
     }
     50%{
-        background-image: url("/img/imagelarge5.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge5.png");
     }
     75%{
-        background-image: url("/img/imagelarge6.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge6.png");
     }
 }
 @keyframes slide { /0%, 33%, 67% (Small)/
     0%{
-        background-image: url("/img/imagelarge.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge.png");
     }
     25%{
-        background-image: url("/img/imagelarge4.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge4.png");
     }
     50%{
-        background-image: url("/img/imagelarge5.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge5.png");
     }
     75%{
-        background-image: url("/img/imagelarge6.png");
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge6.png");
     }
 }
 */
@@ -349,8 +349,8 @@ body {
 @media screen and (max-width: 1068px)
 {
     .banner {
-        /*background: url("/img/iphone_11_pro_medium.jpg");*/
-        background: url("/img/imagelarge.png");
+        /*background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_pro_medium.jpg");*/
+        background: url("https://Mil-House.github.io/Mil-House/img/imagelarge.png");
     }
 
     .hero {
@@ -387,8 +387,8 @@ body {
 @media screen and (max-width: 735px)
 {
     .banner {
-        /*background: url("/img/iphone_11_pro_small.jpg");*/
-        background: url("/img/imagelarge.png");
+        /*background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_pro_small.jpg");*/
+        background: url("https://Mil-House.github.io/Mil-House/img/imagelarge.png");
     }
 
     .hero {
@@ -964,10 +964,10 @@ body {
     /*box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset;*/
     box-shadow: rgb(204, 219, 232) -1px 3px 6px 0px inset;
 
-    /*background-image: url("/img/Liquid-Cheese1.svg");*/
-    /*background-image: url("/img/liquid-chese_services.svg");*/
+    /*background-image: url("https://Mil-House.github.io/Mil-House/img/Liquid-Cheese1.svg");*/
+    /*background-image: url("https://Mil-House.github.io/Mil-House/img/liquid-chese_services.svg");*/
     background-color: #eef2f3;
-    background-image: url("/img/Wave_Line.svg");
+    background-image: url("https://Mil-House.github.io/Mil-House/img/Wave_Line.svg");
     background-size: cover;
 }
 
