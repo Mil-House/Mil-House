@@ -408,8 +408,11 @@ header {
     header.active { /* for 100% menu hight */
         height: 100%;
         background-color: #000;
-        overflow-y: scroll;
-        overflow-x: hidden;       
+        /*overflow-y: scroll;
+        overflow-x: hidden;*/
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch; /*added 4me*/       
     }
 
     .nav-link-mil {
