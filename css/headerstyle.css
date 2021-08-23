@@ -309,6 +309,10 @@ header {
         .chrlog {
             display: none;
         }
+        
+        .phnum a {
+            color: #3363ff;
+        }
     }
      
     @supports not (-webkit-touch-callout: none) {

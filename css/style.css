@@ -179,7 +179,7 @@ body {
 
 /*================ Milhouse-banner  Section ================*/
 .banner {
-    background: url("https://Mil-House.github.io/Mil-House/img/imagelarge.png");
+    background: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");
     margin-top: 4.3rem; /*4.4 rem*/
     background-color: #1b1b1b;
 
@@ -302,21 +302,6 @@ body {
 
 @keyframes slide1 { /*0%, 33%, 67% (Large)*/
     0%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge.png");
-    }
-    25%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge4.png");
-    }
-    50%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge5.png");
-    }
-    75%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge6.png");
-    }
-}
-
-@keyframes slide2 { /*0%, 33%, 67% (Medium)*/
-    0%{
         background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");
     }
     25%{
@@ -330,6 +315,22 @@ body {
     }
 }
 
+/*
+@keyframes slide2 { /*0%, 33%, 67% (Medium)*//*
+    0%{
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");
+    }
+    25%{
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium4.jpg");
+    }
+    50%{
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium5.jpg");
+    }
+    75%{
+        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium6.jpg");
+    }
+}
+*/
 /*
 @keyframes slide { /0%, 33%, 67% (Small)/
     0%{
@@ -349,12 +350,12 @@ body {
 
 @media screen and (max-width: 1068px)
 {
-    .banner {
+    /*.banner {
         /*background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_pro_medium.jpg");*/
-        background: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");
+        /*background: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");*/
 
-        animation: slide2 16s infinite;
-    }
+        /*animation: slide2 16s infinite;*//*
+    }*/
 
     .hero {
         height: 65rem;
@@ -389,10 +390,10 @@ body {
 
 @media screen and (max-width: 735px)
 {
-    .banner {
+    /*.banner {
         /*background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_pro_small.jpg");*/
-        background: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");
-    }
+        /*background: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");*//*
+    }*/
 
     .hero {
         height: 50rem;
@@ -1219,7 +1220,7 @@ body {
 }
 
 .imobcard-ibutn b {
-    letter-spacing: 4px;
+    letter-spacing: 1.5px;
 }
 
 .imobcard-ibutn span {
@@ -1345,7 +1346,7 @@ body {
     }
 
     .mobcard-butn b {
-        letter-spacing: 4px;
+        letter-spacing: 2px;
     }
     
     .mobcard-butn span {
@@ -1856,7 +1857,8 @@ table tr:nth-child(even) {
     color: #808080;
     letter-spacing: 1px;
     font-weight: 500;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    /*box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;*/
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px inset;
     padding: 8px 12px;
     border-radius: 6px;
 }

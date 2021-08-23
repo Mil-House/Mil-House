@@ -201,7 +201,7 @@ header {
 .nav-link-bag {
     width: 1.4rem;
     height: 4.4rem;
-    background: url("hhttps://Mil-House.github.io/Mil-House/img/shop.png") center no-repeat;
+    background: url("https://Mil-House.github.io/Mil-House/img/shop.png") center no-repeat;
     cursor: pointer;
 }
 
@@ -331,9 +331,6 @@ header {
         /* CSS specific to iOS devices */
         .chrlog {
             display: none;
-        }
-        .afterbeforestop {
-            display: none; /*petq e kargavorel*/
         }
     }
      
