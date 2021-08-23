@@ -5,6 +5,21 @@ body {
     min-height: 100vh;
 }
 
+.footsupport {
+    width: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px)
+{
+    .footsupport {
+        width: 100%;
+        height: 0px;
+        padding: 10px 0px;
+        background-color: #1b1b1b;;
+    }
+}
+
 footer {
     position: relative;
     width: 100%;
@@ -124,7 +139,7 @@ footer .fcontainer .sec p {
 }
 
 .copyrghtText {
-    font-size: 1.6rem;
+    font-size: 1.6rem; /*1.6rem*/
     box-sizing: border-box;
     width: 100%;
     background: #131313; /* #1f3389 */

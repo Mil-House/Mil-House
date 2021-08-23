@@ -182,7 +182,7 @@ header {
     cursor: pointer;
 }
 
-/* https://Mil-House.github.io/Example1/img/... */
+/* https://Mil-House.github.io/Mil-House/img/... */
 
 
 /* Text Under Line Hover */
@@ -412,7 +412,7 @@ header {
         overflow-x: hidden;*/
         overflow-y: auto;
         overflow-x: hidden;
-        -webkit-overflow-scrolling: touch; /*added 4me*/       
+        -webkit-overflow-scrolling: touch; /*added 4me*/
     }
 
     .nav-link-mil {
@@ -471,7 +471,7 @@ header {
         border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     }
 
-    .nav-list-larger .nav-item:nth-child(9) {
+    .nav-list-larger .nav-item:nth-child(7) { /*(9)*/
         /*border-bottom: none;*/
         border-bottom: 2px solid #414141;
     }
@@ -536,7 +536,7 @@ header {
 
     .mob_lang .moblangmenu {
         position: absolute;
-        top: 540px; /*510px*/
+        top: 454px; /*510px, 540px*/
         left: 70px; /*50*/
         right: 50px; /*50*/
         /*padding: 0px 20px;*/
@@ -561,7 +561,7 @@ header {
     }
     
     .mob_lang .moblangmenu.active {
-        top: 525px; /*495px*/
+        top: 429px; /*495px*/
         visibility: visible;
         opacity: 1;
     }
@@ -832,8 +832,10 @@ header {
     top: -7px;
     left: 16px;
     width: 12px;
-    height: 16px;
+    height: 12px;
     background: #1b1b1b;
+    border-top: 2px solid rgb(129, 94, 255);
+    border-left: 2px solid rgb(129, 94, 255);
     transform: rotate(45deg);
     z-index: -1;
 }
@@ -952,10 +954,12 @@ header {
     content: '';
     position: absolute;
     top: -7px;
-    right: 20px;
+    right: 19px;
     width: 12px;
-    height: 16px;
+    height: 12px;
     background: #1b1b1b;
+    border-top: 2px solid rgb(129, 94, 255);
+    border-left: 2px solid rgb(129, 94, 255);
     transform: rotate(45deg);
     z-index: -1;
 }
