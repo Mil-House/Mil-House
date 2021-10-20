@@ -1656,6 +1656,11 @@ table tr:nth-child(even) {
 }
 */
 
+.swiper-pagination {
+    position: relative;
+    margin-top: -10px;
+}
+
 .wrapper {
     margin: 0 auto;
     padding: 0 20px;
