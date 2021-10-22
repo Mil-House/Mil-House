@@ -232,8 +232,23 @@ body {
     object-fit: cover;
 }
 
+.swiper-container { /*Added 22.10.2021*/
+    overflow: hidden;
+}
+
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background: linear-gradient(to right, #ffff1c, #c60feb, #00c3ff 100%);
+}
+
+.swiper-pagination-progressbar { /*Added 22.10.2021*/
+    margin-top: 4.4rem;
+    padding-bottom: 5px; /*0.4 rem*/
+}
+
+@media screen and (max-width: 767px) {
+    .swiper-pagination-progressbar { /*Added 22.10.2021*/
+        margin-top: 4.8rem;
+    }
 }
 
 .swiper-button-prev {
