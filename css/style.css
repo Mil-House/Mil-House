@@ -1666,6 +1666,10 @@ table tr:nth-child(even) {
     padding: 0 20px;
     max-width: 800px;
 }
+
+.swiper-container { /*Added 22.10.2021*/
+    overflow: hidden;
+}
   
 .mobiletable {
     border-radius: 8px;
