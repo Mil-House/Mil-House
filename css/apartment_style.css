@@ -240,22 +240,23 @@ body {
     background: linear-gradient(to right, #ffff1c, #c60feb, #00c3ff 100%);
 }
 
-.swiper-pagination-progressbar { /*Added 22.10.2021*/
-    margin-top: 4.4rem;
-    padding-bottom: 5px; /*0.4 rem*/
-}
-
-@media screen and (max-width: 767px) {
-    .swiper-pagination-progressbar { /*Added 22.10.2021*/
-        margin-top: 4.8rem;
-    }
+.swiper-container { /*Added 23.10.2021*/
+    position: relative;
 }
 
 .swiper-button-prev {
     left: 25px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .swiper-button-next {
     right: 25px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 /*============ Apartment About ============*/
