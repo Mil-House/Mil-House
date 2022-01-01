@@ -669,6 +669,7 @@ header {
         font-weight: 500;
         color: #1b1b1b;
         line-height: 1.2em;
+        box-shadow: rgb(204 219 232) 0px 0px 6px 0px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset; /*Added for Mobile (Added 28.10.2021)*/
     }
     
     .operation .minibagmenu h3 span {
@@ -676,7 +677,34 @@ header {
         color: rgb(121, 121, 121);
         font-weight: 400;
     }
-    
+
+    .operation .minibagmenu ul div { /*Added for Mobile (Added 28.10.2021)*/
+        padding: 0 10px 0px;
+        border-radius: 20px;
+        box-shadow: rgb(204 219 232) 0px 0px 6px 0px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
+
+        height: 100%;
+    }
+
+    /*--=== responsive phone width*/
+    @media (max-width: 736px) and (max-height: 414px) {
+        .operation .minibagmenu ul div { /*Added for Mobile (Added 30.10.2021)*/
+            height: 224px;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+    @media (max-width: 570px) and (max-height: 320px) {
+        .operation .minibagmenu ul div { /*Added for Mobile (Added 30.10.2021)*/
+            height: 179px;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+    /*responsive phone width ===--*/
+
+
     .operation .minibagmenu ul li {
         list-style: none;
         padding: 10px 0;
@@ -686,8 +714,13 @@ header {
         cursor: pointer;
     }
 
-    .operation .minibagmenu ul {
-        padding: 0px 12px 12px;
+    .operation .minibagmenu ul li:first-child { /*Added for Mobile (Added 28.10.2021)*/
+        border-top: none;
+    }
+
+
+    .operation .minibagmenu ul { /*0px 12px 12px*/
+        padding: 10px 10px 10px;
     }
     
     .operation .minibagmenu span {

@@ -903,6 +903,13 @@ body {
     background-size: cover;
 }
 
+.ourservice {
+    box-shadow: rgb(204, 219, 232) -1px 3px 6px 0px inset;
+    
+    background-image: url("https://Mil-House.github.io/Mil-House/img/Sun-Tornado.svg");
+    background-size: cover;
+}
+
 .about {
     font-family: Arial, Helvetica, sans-serif;
     /*box-shadow: rgba(50, 50, 93, 0.25) 0 1px 40px -12px inset;*/
@@ -1059,7 +1066,7 @@ body {
     font-weight: 600;
     letter-spacing: 1.5px;
     font-size: 2.6rem;
-    margin-bottom: 40px;
+    margin-bottom: 26px; /*40px*/
 }
 
 @media (max-width: 525px)
@@ -1667,10 +1674,14 @@ table tr:nth-child(even) {
     max-width: 800px;
 }
 
+/*.Swipertable .swiper-container .swiper-wrapper .swiper-slide {
+    overflow-x: hidden;
+}-------------------------------------------------------------------?????????????????????????????????????????????????? */
+
 .swiper-container { /*Added 22.10.2021*/
     overflow: hidden;
 }
-  
+
 .mobiletable {
     border-radius: 8px;
     margin: 0 0 40px 0;
@@ -1829,6 +1840,103 @@ table tr:nth-child(even) {
 .Swipertabletxt {
     padding-bottom: 10px;
 }
+
+/*--================= Our Service Privilage =================--*/
+  
+.ourservice {
+    /*background: #e8e8e8;*/
+    background-color: rgb(238, 242, 243);
+    box-sizing: border-box;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+  
+.privileges-section {
+    width: 100%;
+}
+  
+.inner-width {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+  
+.privileges-section h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px; /*80px*/
+    padding-top: 30px; /* added from me 10.11.2021 */
+}
+  
+.privileges-section h1 strong {
+    color: #6ab04c;
+    /*color: #815EFF;*/
+}
+  
+.privilege {
+    text-align: center;
+    margin: 20px 0;
+}
+  
+.privilege-icon {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    /*background: #ecf6ff;*/
+    border-radius: 50%;
+    color: #6ab04c;
+    /*color: #815EFF;*/
+    line-height: 60px;
+    font-size: 25px;
+
+    background: rgba(0, 0, 0, 0.03);
+    border: 2px solid rgb(230, 230, 230);
+    box-shadow: rgb(204 219 232) 3px 3px 6px 0px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
+}
+  
+.privilege-name {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px 0;
+}
+  
+.privilege-desc {
+    max-width: 400px;
+    margin: auto;
+    color: #333;
+    font-size: 17px;
+}
+  
+.owl-dots {
+    text-align: center;
+    margin-top: 40px; /*40px*/
+    padding-bottom: 30px; /* added from me 11.11.2021 */
+}
+  
+.owl-dot {
+    width: 14px;
+    height: 14px;
+    background: #808080 !important;
+    margin: 0 6px;
+    border-radius: 14px;
+    outline: none;
+    transition: .3s linear;
+}
+  
+.owl-dot.active {
+    width: 36px;
+    background: #6ab04c !important;
+    /*background: #815EFF !important;*/
+}
+  
+.owl-dot:hover {
+    width: 36px;
+    background: #6ab04c !important;
+    /*background: #815EFF !important;*/
+}
+
 
 /*============ Phone Number & Date ============*/
 
@@ -2068,4 +2176,3 @@ table tr:nth-child(even) {
         margin: 1.4rem;
     }
 }
-

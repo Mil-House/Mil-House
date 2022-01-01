@@ -55,8 +55,19 @@ footer .fcontainer .sec h2::before {
     background: rgb(129, 94, 255); /* #ffeb3b */
 }
 
+footer .fcontainer .sec h2 .hometxtlog { /* Added 26.10.2021 */
+    font-family: 'Krona One', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+footer .fcontainer .sec h2 .homelog { /* Added 26.10.2021 */
+    font-size: 3.24rem;
+}
+
 footer .fcontainer .sec p {
-    color: #fff;;
+    color: #fff;
+    padding-right: 20px;
 }
 
 .sci {
@@ -95,15 +106,26 @@ footer .fcontainer .sec p {
     position: relative;
 }
 
+.quicklinks h2 {
+    letter-spacing: 0.6px; /* Added 26.10.2021 */
+}
+
+.contact h2 {
+    letter-spacing: 0.6px; /* Added 26.10.2021 */
+}
+
 .quicklinks li {
     list-style: none;
 }
 
 .quicklinks li a {
-    color: #f7f7f7;
+    /*color: #f7f7f7;*/
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
+    color: #888;
+    cursor: default;
+    user-select: none;
 }
 
 .quicklinks li a:hover {
