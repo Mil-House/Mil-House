@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,200,400,500,600,700,800,900&dispaly=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
-/*
-::-webkit-scrollbar {
-    display: none; 
-}
-*/
+
 /*======== Global ========*/
 *,
 *::before,
@@ -24,9 +20,6 @@ html {
 }
 
 .amenaskizb {
-    /*width: 100%;
-    height: 4.6vh;
-    height: 4.4rem;*/
     height: 0.1rem;
 }
 
@@ -108,7 +101,14 @@ header {
     text-decoration: none;
     font-size: 1.1em;
     letter-spacing: 0.5px;
-    padding-left: 46px;
+    padding-left: 32px; /*46px*/
+}
+
+@supports (-webkit-touch-callout: none) { /*Added 31.01.2022*/
+    .nav-link-mil .backbtn {
+        position: relative;
+        top: -3px; /*-2px*/
+    }
 }
 
 .nav-link-mil .backbtn .fa-angle-left {
@@ -221,7 +221,7 @@ header {
         height: 3px;
         bottom: 0;
         margin: -5px 0; /*-7px 0*/
-        background-color: rgb(129, 94, 255);
+        background-color: #00b6fe; /*rgb(129, 94, 255)*/
         border-radius: 6px 6px 6px 6px;
         visibility: hidden;
         transform: scaleX(0);
@@ -245,46 +245,6 @@ header {
     }
 }
 
-/*================ Sections ================*/
-
-/*==== Milhouse-banner Section ====
-.milhouse-banner {
-    background: url("https://Mil-House.github.io/Mil-House/img/imphoto_pro.jpg");
-    margin-top: 4.4rem;
-}
-
-/*==== Milhouse Section ====*
-.milhouse {
-    background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_large.jpg");
-}
-
-.watch {
-    background: url("https://Mil-House.github.io/Mil-House/img/watch_large.jpg");
-}
-
-/* Moved to the bottom of all section styles to keep consistent styles *
-
-.milhouse-banner {
-    border-top: none;
-}
-/* end *
-
-@media screen and (max-width: 1068px)
-{
-    .milhouse-banner {
-        background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_pro_medium.jpg");
-    }
-
-    .milhouse {
-        background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_medium.jpg");
-    }
-
-    .watch {
-        background: url("https://Mil-House.github.io/Mil-House/img/watch_medium.jpg");
-    }
-}
-*/
-
 @media screen and (max-width: 767px)
 {
     header {
@@ -297,23 +257,13 @@ header {
         padding: 0;
     }
 
-    /*.bardzr { el petq chi
-        height: 4.8rem;
-    }*/
-
-    /*
-    .milhouse-banner {
-        margin-top: 4.8rem;
-    }
-    */
-
     .nav-list {
-        margin-top: 0; /* default margin-top: 0;  added me -2px for Logo 1 */
+        margin-top: 0;
     }
 
     .nav-list-mobile {
         display: flex;
-        padding: 2px 1rem;   /* added from me */
+        padding: 2px 1rem;
     }
 
     .nav-item {
@@ -325,17 +275,13 @@ header {
     }
 
 
-
-    /* iOS Safary support */
     @supports (-webkit-touch-callout: none) {
-        /* CSS specific to iOS devices */
         .chrlog {
             display: none;
         }
     }
      
     @supports not (-webkit-touch-callout: none) {
-        /* CSS for other than iOS devices (Chromi hamar) */
         .ioslog {
             display: none;
         }
@@ -347,17 +293,6 @@ header {
         white-space: nowrap;
         text-decoration: none;
         font-weight: 800;
-        /*
-        font-weight: 500; 800
-        font-size: 1em; 1.6em
-        border: 1px solid #f8f8f8;
-        border-radius: 8px;
-        background-color: #f8f8f8;
-        padding: 0 8px 0 8px;
-        color: #111;
-        letter-spacing: 2px;
-        text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);*/
-
 
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -380,7 +315,7 @@ header {
     
 
     .nav-item .logo-mobile .fa-home {
-        font-size: 1.9rem; /*2.9rem  for Logo 1*/
+        font-size: 1.9rem; 
         font-weight: 500;
     }
 
@@ -525,7 +460,7 @@ header {
 
         border-radius: 10px; /*15px;*/
         margin-top: 8px; /*6px;*/
-        border-top: 3px solid rgb(129, 94, 255);
+        border-top: 3px solid #0083fe; /*rgb(129, 94, 255)*/
         border-left: 2px solid #414141;
         border-right: 2px solid #414141;
         height: 42px; /*36px;*/
@@ -544,7 +479,7 @@ header {
         background: #111;
         border-radius: 10px; /*15px;*/
         margin-top: 8px; /*6px;*/
-        border-top: 3px solid rgb(129, 94, 255);
+        border-top: 3px solid #0083fe; /*rgb(129, 94, 255)*/
         border-left: 2px solid #414141;
         border-right: 2px solid #414141;
         height: 42px; /*36px;*/
@@ -567,12 +502,13 @@ header {
         /*width: 100%;*/
         /*box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);*/
         border-radius: 10px;
-        border-bottom: 3px solid rgb(129, 94, 255);
+        border-bottom: 3px solid #0083fe; /*rgb(129, 94, 255)*/
         border-top: 2px solid #414141;
         border-left: 2px solid #414141;
         border-right: 2px solid #414141;
 
-        box-shadow: rgba(129, 94, 255, 0.2) 0px 5px, rgba(129, 94, 255, 0.1) 0px 10px, rgba(129, 94, 255, 0.05) 0px 15px;
+        box-shadow: rgba(0, 152, 254, 0.2) 0px 5px, rgba(0, 152, 254, 0.1) 0px 10px, rgba(0, 152, 254, 0.05) 0px 15px;
+        /*rgba(129, 94, 255, 0.2) 0px 5px, rgba(129, 94, 255, 0.1) 0px 10px, rgba(129, 94, 255, 0.05) 0px 15px;*/
 
         transition: 0.4s;
         visibility: hidden;
@@ -649,11 +585,12 @@ header {
         background: rgba( 255, 255, 255);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 
-        box-shadow: rgba(129, 94, 255, 0.3) 0px 5px, rgba(129, 94, 255, 0.2) 0px 10px, rgba(129, 94, 255, 0.1) 0px 15px, rgba(129, 94, 255, 0.05) 0px 20px;
+        box-shadow: rgba(0, 152, 254, 0.3) 0px 5px, rgba(0, 152, 254, 0.2) 0px 10px, rgba(0, 152, 254, 0.1) 0px 15px, rgba(0, 152, 254, 0.05) 0px 20px;
+        /*box-shadow: rgba(129, 94, 255, 0.3) 0px 5px, rgba(129, 94, 255, 0.2) 0px 10px, rgba(129, 94, 255, 0.1) 0px 15px, rgba(129, 94, 255, 0.05) 0px 20px;*/
         width: 100%;
         /*box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);*/
         border-radius: 0 0 7% 7%;
-        border-bottom: 5px solid rgb(129, 94, 255);
+        border-bottom: 5px solid #0083fe; /*rgb(129, 94, 255)*/
         transition: 0.5s;
         visibility: hidden;
         opacity: 0;
@@ -726,7 +663,7 @@ header {
     
     .operation .minibagmenu ul li {
         list-style: none;
-        padding: 10px 0;
+        padding: 8px 0; /*10px 0*/
         border-top: 1px solid #1b1b1b50;
         display: flex;
         align-items: center;
@@ -743,7 +680,7 @@ header {
         text-align: center;
         background: rgba(0, 0, 0, 0.03);
         width: 100%;
-        padding: 10px 0 10px 0;
+        padding: 8px 0 8px 0; /*10px 0 10px 0*/
         border: 2px solid rgb(230, 230, 230);
         border-radius: 6px;
         box-shadow: rgb(204 219 232) 3px 3px 6px 0px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
@@ -751,7 +688,7 @@ header {
     
     .selectedmobline .fa-chevron-right, .fa-chevron-left { 
         font-size: 1.6rem;
-        color: rgb(129, 94, 255);
+        color: #00b6fe; /*rgb(129, 94, 255)*/
     }
     
     .selectedmobline .fa-chevron-right { 
@@ -810,14 +747,61 @@ header {
     .operation .minibagmenu ul li a {
         display: inline-block;
         text-decoration: none;
-        color: #1b1b1b;
+        /*color: #1b1b1b;*/
+        color: #4f546c;
         font-weight: 500;
         transition: 0.3s;
-        font-size: 1.8em;
+        font-size: 1.8rem;
+    }
+
+    .operation .minibagmenu ul li a b {
+        display: inline-block;
+        border: 1.5px solid #47474740;
+        background: rgba( 255, 255, 255, 0.25 );
+        border-radius: 0.6rem;
+        margin-left: 8px;
+        padding: 4px 6px;
+        box-shadow: inset 3px 3px 7px rgb(136 165 191 / 48%), inset -3px -3px 7px #fff;
+    }
+
+    @media (max-width: 400px)
+    {
+        .operation .minibagmenu ul li a {
+            font-size: 1.66rem;
+        }
+    
+        .operation .minibagmenu ul li a b {
+            font-size: 1.46rem;
+            margin-left: 2px;
+        }
+    }
+
+    @media (max-width: 336px)
+    {
+        .operation .minibagmenu ul li a {
+            font-size: 1.46rem;
+        }
+    
+        .operation .minibagmenu ul li a b {
+            font-size: 1.36rem;
+            margin-left: 2px;
+        }
+    }
+
+    @media (max-width: 300px)
+    {
+        .operation .minibagmenu ul li a {
+            font-size: 1.5rem; 
+        }
+    
+        .operation .minibagmenu ul li a b {
+            font-size: 1.4rem;
+            margin-top: 4px;
+        }
     }
     
     .operation .minibagmenu ul li:hover a {
-        color: rgb(129, 94, 255);
+        color: #0083fe; /*rgb(129, 94, 255)*/
     }
 
     
@@ -909,7 +893,7 @@ header {
     width: 140px;
     box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    border-bottom: 3px solid rgb(129, 94, 255);
+    border-bottom: 3px solid #00b6fe; /*rgb(129, 94, 255)*/
     transition: 0.4s;
     visibility: hidden;
     opacity: 0;
@@ -929,8 +913,8 @@ header {
     width: 12px;
     height: 12px;
     background: #1b1b1b;
-    border-top: 2px solid rgb(129, 94, 255);
-    border-left: 2px solid rgb(129, 94, 255);
+    border-top: 2px solid #00b6fe; /*rgb(129, 94, 255)*/
+    border-left: 2px solid #00b6fe; /*rgb(129, 94, 255)*/
     transform: rotate(45deg);
     z-index: -1;
 }
@@ -1003,19 +987,6 @@ header {
     color: cyan;
 }
 
-/*
-@media (max-width: 1292px)
-{
-    .activity .bagmenu {
-        right: 10px;
-        position: fixed;
-    }
-
-    .activity .bagmenu::before {
-        display: none;
-    }
-}*/
-
 @media (max-width: 1300px)
 {
     .activity .bagmenu {
@@ -1033,7 +1004,7 @@ header {
     width: 320px;
     box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    border-bottom: 3px solid rgb(129, 94, 255);
+    border-bottom: 3px solid #00b6fe; /*rgb(129, 94, 255)*/
     transition: 0.5s;
     visibility: hidden;
     opacity: 0;
@@ -1053,8 +1024,8 @@ header {
     width: 12px;
     height: 12px;
     background: #1b1b1b;
-    border-top: 2px solid rgb(129, 94, 255);
-    border-left: 2px solid rgb(129, 94, 255);
+    border-top: 2px solid #00b6fe; /*rgb(129, 94, 255)*/
+    border-left: 2px solid #00b6fe; /*rgb(129, 94, 255)*/
     transform: rotate(45deg);
     z-index: -1;
 }
@@ -1097,7 +1068,7 @@ header {
 
 .selectedline .fa-chevron-right, .fa-chevron-left { 
     font-size: 1.6rem;
-    color: rgb(129, 94, 255);
+    color: #00b6fe; /*rgb(129, 94, 255)*/
 }
 
 .selectedline .fa-chevron-right { 
@@ -1146,11 +1117,28 @@ header {
     color: #f8f8f8;
     font-weight: 500;
     transition: 0.3s;
-    font-size: 1.8em;
+    font-size: 1.75rem;
+}
+
+.activity .bagmenu ul li a b {
+    display: inline-block;
+    color: #4f546c;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #a5a5a540;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 0.6rem;
+    margin-left: 8px;
+    padding: 4px 6px;
+    box-shadow: inset 3px 3px 7px rgb(136 165 191 / 48%), inset -3px -3px 7px #fff;
 }
 
 .activity .bagmenu ul li:hover a {
     color: cyan;
+}
+
+.activity .bagmenu ul li:hover b {
+    color: #008080;
 }
 
 /*------- moblangmenui hamar ------*/
@@ -1167,6 +1155,8 @@ header {
     .nav-list .moblangmenu {
         padding: 0 8%;
     }
+
+    .logo-mobile {padding-left: 25px;}
 }
 
 @media (max-width: 246px)

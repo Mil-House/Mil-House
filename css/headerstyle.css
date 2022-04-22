@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,200,400,500,600,700,800,900&dispaly=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
-/*
-::-webkit-scrollbar {
-    display: none; 
-}
-*/
+
+
 /*======== Global ========*/
 *,
 *::before,
@@ -24,9 +21,6 @@ html {
 }
 
 .amenaskizb {
-    /*width: 100%;
-    height: 4.6vh;
-    height: 4.4rem;*/
     height: 0.1rem;
 }
 
@@ -102,26 +96,22 @@ header {
 
 .nav-link-mil .logo {
     font-family: 'Krona One', sans-serif;
-    width: 1.6rem; /*?*/
+    width: 1.6rem;
     height: 4.4rem;
-    /*text-transform: uppercase;*/
     white-space: nowrap;
     text-decoration: none;
     font-weight: 900;
-    /*background: url("https://Mil-House.github.io/Mil-House/img/apple.svg") center no-repeat;*/
     font-size: 1.6em;
     transition: 0.4s;
 }
 
 .mil-link .logo {
     font-family: 'Krona One', sans-serif;
-    width: 1.6rem; /*?*/
+    width: 1.6rem;
     height: 4.4rem;
-    /*text-transform: uppercase;*/
     white-space: nowrap;
     text-decoration: none;
     font-weight: 900;
-    /*background: url("https://Mil-House.github.io/Mil-House/img/apple.svg") center no-repeat;*/
     font-size: 1.6em;
     transition: 0.4s;
 }
@@ -129,15 +119,13 @@ header {
 .logo {
     color: #111;
 
-    background: #00c3ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #c60feb, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #c60feb, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #00c3ff;
+    background: -webkit-linear-gradient(to right, #c60feb, #ffff1c, #00c3ff); 
+    background: linear-gradient(to right, #c60feb, #ffff1c, #00c3ff);   
 
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    /*text-shadow: 0 0 55px #FFFFFF;*/
 }
 
 .nav-link-mil .logo .fa-home {
@@ -170,7 +158,6 @@ header {
 .nav-link-lang {
     width: 1.6rem;
     height: 4.4rem;
-    /*background: url("https://Mil-House.github.io/Mil-House/img/search.svg") center no-repeat;*/
     background: url("https://Mil-House.github.io/Mil-House/img/translate2.png") center no-repeat;
     cursor: pointer;
 }
@@ -182,10 +169,6 @@ header {
     cursor: pointer;
 }
 
-/* https://Mil-House.github.io/Mil-House/img/... */
-
-
-/* Text Under Line Hover */
 @media (min-width: 768px)
 {
     .effect-one {
@@ -198,7 +181,7 @@ header {
         height: 3px;
         bottom: 0;
         margin: -7px 0;
-        background-color: rgb(129, 94, 255);
+        background-color: #00b6fe; /*rgb(129, 94, 255)*/
         border-radius: 6px 6px 6px 6px;
         visibility: hidden;
         transform: scaleX(0);
@@ -222,46 +205,6 @@ header {
     }
 }
 
-/*================ Sections ================*/
-
-/*==== Milhouse-banner Section ====
-.milhouse-banner {
-    background: url("https://Mil-House.github.io/Mil-House/img/imphoto_pro.jpg");
-    margin-top: 4.4rem;
-}
-
-/*==== Milhouse Section ====*
-.milhouse {
-    background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_large.jpg");
-}
-
-.watch {
-    background: url("https://Mil-House.github.io/Mil-House/img/watch_large.jpg");
-}
-
-/* Moved to the bottom of all section styles to keep consistent styles *
-
-.milhouse-banner {
-    border-top: none;
-}
-/* end *
-
-@media screen and (max-width: 1068px)
-{
-    .milhouse-banner {
-        background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_pro_medium.jpg");
-    }
-
-    .milhouse {
-        background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_medium.jpg");
-    }
-
-    .watch {
-        background: url("https://Mil-House.github.io/Mil-House/img/watch_medium.jpg");
-    }
-}
-*/
-
 @media screen and (max-width: 767px)
 {
     header {
@@ -273,16 +216,6 @@ header {
     header .hcontainer {
         padding: 0;
     }
-
-    /*.bardzr { el petq chi
-        height: 4.8rem;
-    }*/
-
-    /*
-    .milhouse-banner {
-        margin-top: 4.8rem;
-    }
-    */
 
     .nav-list {
         margin-top: 0; /* default margin-top: 0;  added me -2px for Logo 1 */
@@ -324,25 +257,14 @@ header {
 
     .nav-item .logo-mobile {
         font-family: 'Krona One', sans-serif;
-        /*font-family: 'Poppins', sans-serif;*/
         white-space: nowrap;
         text-decoration: none;
         font-weight: 800;
-        /*
-        font-weight: 500; 800
-        font-size: 1em; 1.6em
-        border: 1px solid #f8f8f8;
-        border-radius: 8px;
-        background-color: #f8f8f8;
-        padding: 0 8px 0 8px;
-        color: #111;
-        letter-spacing: 2px;
-        text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);*/
 
 
         letter-spacing: 1px;
         text-transform: uppercase;
-        background-image: linear-gradient(to right, rgb(132, 0, 255), #fff, #fff, gold, rgb(255, 0, 0));
+        background-image: linear-gradient(to right, #0083fe, #fff, #fff, gold, rgb(255, 0, 0)); /*rgb(132, 0, 255)*/
         -webkit-background-clip: text; 
         background-clip: text; 
         color: transparent;
@@ -412,8 +334,6 @@ header {
     header.active { /* for 100% menu hight */
         height: 100%;
         background-color: #000;
-        /*overflow-y: scroll;
-        overflow-x: hidden;*/
         overflow-y: auto;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch; /*added 4me*/
@@ -501,12 +421,12 @@ header {
         /*background: #111;*/
         background: #000428;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, #004e92, #000428); 
 
 
         border-radius: 10px; /*15px;*/
         margin-top: 8px; /*6px;*/
-        border-top: 3px solid rgb(129, 94, 255);
+        border-top: 3px solid #0098fe; /*rgb(129, 94, 255)*/
         border-left: 2px solid #414141;
         border-right: 2px solid #414141;
         height: 42px; /*36px;*/
@@ -525,7 +445,7 @@ header {
         background: #111;
         border-radius: 10px; /*15px;*/
         margin-top: 8px; /*6px;*/
-        border-top: 3px solid rgb(129, 94, 255);
+        border-top: 3px solid #0098fe; /*rgb(129, 94, 255)*/
         border-left: 2px solid #414141;
         border-right: 2px solid #414141;
         height: 42px; /*36px;*/
@@ -543,17 +463,15 @@ header {
         top: 454px; /*510px, 540px*/
         left: 70px; /*50*/
         right: 50px; /*50*/
-        /*padding: 0px 20px;*/
         background: #1b1b1b;
-        /*width: 100%;*/
-        /*box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);*/
         border-radius: 10px;
-        border-bottom: 3px solid rgb(129, 94, 255);
+        border-bottom: 3px solid #0098fe; /*rgb(129, 94, 255)*/
         border-top: 2px solid #414141;
         border-left: 2px solid #414141;
         border-right: 2px solid #414141;
 
-        box-shadow: rgba(129, 94, 255, 0.2) 0px 5px, rgba(129, 94, 255, 0.1) 0px 10px, rgba(129, 94, 255, 0.05) 0px 15px;
+        box-shadow: rgba(0, 152, 254, 0.2) 0px 5px, rgba(0, 152, 254, 0.1) 0px 10px, rgba(0, 152, 254, 0.05) 0px 15px;
+        /*box-shadow: rgba(129, 94, 255, 0.2) 0px 5px, rgba(129, 94, 255, 0.1) 0px 10px, rgba(129, 94, 255, 0.05) 0px 15px;*/
 
         transition: 0.4s;
         visibility: hidden;
@@ -573,7 +491,6 @@ header {
     .mob_lang .moblangmenu ul li {
         list-style: none;
         padding: 6px 0px;
-        /*border-top: 1px solid rgba(255, 255, 255, 0.2);*/
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -625,16 +542,15 @@ header {
         top: 80px;
         left: 0;
         right: 0;
-        /*padding: 0 20px;*/
-        /*background: #e0e0e0;*/
         background: rgba( 255, 255, 255);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 
-        box-shadow: rgba(129, 94, 255, 0.3) 0px 5px, rgba(129, 94, 255, 0.2) 0px 10px, rgba(129, 94, 255, 0.1) 0px 15px, rgba(129, 94, 255, 0.05) 0px 20px;
+        box-shadow: rgba(0, 152, 254, 0.3) 0px 5px, rgba(0, 152, 254, 0.2) 0px 10px, rgba(0, 152, 254, 0.1) 0px 15px, rgba(0, 152, 254, 0.05) 0px 20px;
+        /*box-shadow: rgba(129, 94, 255, 0.3) 0px 5px, rgba(129, 94, 255, 0.2) 0px 10px, rgba(129, 94, 255, 0.1) 0px 15px, rgba(129, 94, 255, 0.05) 0px 20px;*/
         width: 100%;
         /*box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);*/
         border-radius: 0 0 7% 7%;
-        border-bottom: 5px solid rgb(129, 94, 255);
+        border-bottom: 5px solid #0098fe; /*rgb(129, 94, 255)*/
         transition: 0.5s;
         visibility: hidden;
         opacity: 0;
@@ -707,7 +623,7 @@ header {
 
     .operation .minibagmenu ul li {
         list-style: none;
-        padding: 10px 0;
+        padding: 8px 0; /*10px 0*/
         border-top: 1px solid #1b1b1b50;
         display: flex;
         align-items: center;
@@ -748,18 +664,66 @@ header {
     .operation .minibagmenu ul li:hover img {
         opacity: 1;
     }
-    
+
     .operation .minibagmenu ul li a {
         display: inline-block;
         text-decoration: none;
-        color: #1b1b1b;
+        /*color: #1b1b1b;*/
+        color: #4f546c;
         font-weight: 500;
         transition: 0.3s;
-        font-size: 1.8em;
+        font-size: 1.8rem;
     }
+
+    .operation .minibagmenu ul li a b {
+        display: inline-block;
+        border: 1.5px solid #47474740;
+        background: rgba( 255, 255, 255, 0.25 );
+        border-radius: 0.6rem;
+        margin-left: 8px;
+        padding: 4px 6px;
+        box-shadow: inset 3px 3px 7px rgb(136 165 191 / 48%), inset -3px -3px 7px #fff;
+    }
+
+    @media (max-width: 400px)
+    {
+        .operation .minibagmenu ul li a {
+            font-size: 1.6rem;
+        }
+    
+        .operation .minibagmenu ul li a b {
+            font-size: 1.46rem;
+            margin-left: 2px;
+        }
+    }
+
+    @media (max-width: 336px)
+    {
+        .operation .minibagmenu ul li a {
+            font-size: 1.46rem;
+        }
+    
+        .operation .minibagmenu ul li a b {
+            font-size: 1.36rem;
+            margin-left: 2px;
+        }
+    }
+
+    @media (max-width: 300px)
+    {
+        .operation .minibagmenu ul li a {
+            font-size: 1.5rem; 
+        }
+    
+        .operation .minibagmenu ul li a b {
+            font-size: 1.4rem;
+            margin-top: 4px;
+        }
+    }
+
     
     .operation .minibagmenu ul li:hover a {
-        color: rgb(129, 94, 255);
+        color: #0083fe; /*rgb(129, 94, 255)*/
     }
 
     
@@ -851,7 +815,7 @@ header {
     width: 140px;
     box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    border-bottom: 3px solid rgb(129, 94, 255);
+    border-bottom: 3px solid #00b6fe; /*rgb(129, 94, 255)*/
     transition: 0.4s;
     visibility: hidden;
     opacity: 0;
@@ -871,8 +835,8 @@ header {
     width: 12px;
     height: 12px;
     background: #1b1b1b;
-    border-top: 2px solid rgb(129, 94, 255);
-    border-left: 2px solid rgb(129, 94, 255);
+    border-top: 2px solid #00b6fe; /*rgb(129, 94, 255)*/
+    border-left: 2px solid #00b6fe; /*rgb(129, 94, 255)*/
     transform: rotate(45deg);
     z-index: -1;
 }
@@ -945,19 +909,6 @@ header {
     color: cyan;
 }
 
-/*
-@media (max-width: 1292px)
-{
-    .activity .bagmenu {
-        right: 10px;
-        position: fixed;
-    }
-
-    .activity .bagmenu::before {
-        display: none;
-    }
-}*/
-
 @media (max-width: 1300px)
 {
     .activity .bagmenu {
@@ -975,7 +926,7 @@ header {
     width: 320px;
     box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    border-bottom: 3px solid rgb(129, 94, 255);
+    border-bottom: 3px solid #00b6fe; /*rgb(129, 94, 255)*/
     transition: 0.5s;
     visibility: hidden;
     opacity: 0;
@@ -995,8 +946,8 @@ header {
     width: 12px;
     height: 12px;
     background: #1b1b1b;
-    border-top: 2px solid rgb(129, 94, 255);
-    border-left: 2px solid rgb(129, 94, 255);
+    border-top: 2px solid #00b6fe; /*rgb(129, 94, 255)*/
+    border-left: 2px solid #00b6fe; /*rgb(129, 94, 255)*/
     transform: rotate(45deg);
     z-index: -1;
 }
@@ -1057,11 +1008,28 @@ header {
     color: #f8f8f8;
     font-weight: 500;
     transition: 0.3s;
-    font-size: 1.8em;
+    font-size: 1.75rem;
+}
+
+.activity .bagmenu ul li a b {
+    display: inline-block;
+    color: #4f546c;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #a5a5a540;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 0.6rem;
+    margin-left: 8px;
+    padding: 4px 6px;
+    box-shadow: inset 3px 3px 7px rgb(136 165 191 / 48%), inset -3px -3px 7px #fff;
 }
 
 .activity .bagmenu ul li:hover a {
     color: cyan;
+}
+
+.activity .bagmenu ul li:hover b {
+    color: #008080;
 }
 
 /*------- moblangmenui hamar ------*/

@@ -1,18 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,200,400,500,600,700,800,900&dispaly=swap');
 
 /*======== Loader ... ========*/
-
-/*
-::-webkit-scrollbar {
-    display: none; 
-}
-*/
-
 @keyframes load {
     0% {
         opacity: 0.08;
-        /* font-size: 10px; */
-        /* font-weight: 400; */
 	    filter: blur(5px);
 	    letter-spacing: 3px;
     }
@@ -95,59 +86,16 @@
     }
 }
 
-
-/*===============================================
-.loader_bg {
-    position: fixed;
-    z-index: 999999;
-    background: #fff;
-    width: 100%;
-    height: 100%;
-}
-
-.loader {
-    border: 0 solid transparent;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: calc(50vh - 75px);
-    left: calc(50vw - 75px);
-}
-
-.loader:before, .loader:after {
-    content: '';
-    border: 1em solid rgb(129, 94, 255);
-    border-radius: 50%;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: loader 2s linear infinite;
-    opacity: 0;
-}
-
-.loader:before {
-    animation-delay: .5s;
-}
-
-@keyframes loader{
-    0%{
-        transform: scale(0);
-        opacity: 0;
+@media (max-width: 300px)
+{
+    .animate .fa {
+        font-size: 3.5rem;
     }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        transform: scale(1);
-        opacity: 0;
+
+    .animate {
+        font-size: 3.2rem; /*3.8rem*/
     }
 }
-*/
-
-
 
 /*======== Loader ... ========*/
 
@@ -166,25 +114,42 @@ section, footer {
     box-sizing: border-box;
 }
 
-/*
-body {
-    background-image: url("https://Mil-House.github.io/Mil-House/img/Sun-Tornado.svg");
-    background-size: cover;
-}
-*/
-
 .main {
     font-family: 'Poppins', sans-serif;
 }
 
 /*================ Milhouse-banner  Section ================*/
 .banner {
-    background: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");
     margin-top: 4.3rem; /*4.4 rem*/
     background-color: #1b1b1b;
 
-    animation: slide1 16s infinite;
+    /*animation: slide1 16s infinite;*/
 }
+
+/*======------ Video banner ------======*/
+.videobanner {
+    position: absolute;
+    /*top: 0;*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.darkcover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.bannercontainer {
+    position: relative;
+    z-index: 6;
+}
+/*------------===========*/
 
 .btitle {
     color: #fff;
@@ -201,7 +166,7 @@ body {
 }
 
 .btitle-bsub-bheading {
-    font-size: 2.35rem; /*2.65rem*/
+    font-size: 2.30rem; /*2.35rem, 2.65rem*/
     margin-top: .2rem; /*.6rem*/
     letter-spacing: .008rem;
     font-weight: 400;
@@ -209,7 +174,7 @@ body {
 }
 
 .btitle-bprice {
-    font-size: 1.7rem;
+    font-size: 1.9rem; /*1.7rem*/
     color: #cfc; /*#888*/
     margin-top: .68rem;
     text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
@@ -264,8 +229,8 @@ body {
     content: '';
     position: absolute;
     padding: 20px;
-    border-bottom: 2px solid rgb(141, 111, 247);
-    border-right: 2px solid rgb(141, 111, 247);
+    border-bottom: 2px solid #09c6f9; /*rgb(141, 111, 247)*/
+    border-right: 2px solid #045de9; /*rgb(141, 111, 247)*/
     border-radius: 4px;
 }
 
@@ -300,63 +265,8 @@ body {
     border-bottom: .6rem solid #fff;*/
 }
 
-@keyframes slide1 { /*0%, 33%, 67% (Large)*/
-    0%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");
-    }
-    25%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium4.jpg");
-    }
-    50%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium5.jpg");
-    }
-    75%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium6.jpg");
-    }
-}
-
-/*
-@keyframes slide2 { /*0%, 33%, 67% (Medium)*//*
-    0%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");
-    }
-    25%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium4.jpg");
-    }
-    50%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium5.jpg");
-    }
-    75%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagemedium6.jpg");
-    }
-}
-*/
-/*
-@keyframes slide { /0%, 33%, 67% (Small)/
-    0%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge.png");
-    }
-    25%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge4.png");
-    }
-    50%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge5.png");
-    }
-    75%{
-        background-image: url("https://Mil-House.github.io/Mil-House/img/imagelarge6.png");
-    }
-}
-*/
-
 @media screen and (max-width: 1068px)
 {
-    /*.banner {
-        /*background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_pro_medium.jpg");*/
-        /*background: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");*/
-
-        /*animation: slide2 16s infinite;*//*
-    }*/
-
     .hero {
         height: 65rem;
         background-size: auto 69.8rem;
@@ -371,11 +281,6 @@ body {
     .btitle-bheading {
         font-size: 6.6rem; /*4.4 rem*/
     }
-
-    .btitle-bsub-bheading {
-        margin-left: 2rem;
-    }
-
     .arrowposition {
         padding-top: 100px;
     }
@@ -390,11 +295,6 @@ body {
 
 @media screen and (max-width: 735px)
 {
-    /*.banner {
-        /*background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_pro_small.jpg");*/
-        /*background: url("https://Mil-House.github.io/Mil-House/img/imagemedium.jpg");*//*
-    }*/
-
     .hero {
         height: 50rem;
         background-size: auto 54.8rem;
@@ -415,7 +315,7 @@ body {
     }
 
     .btitle-bprice {
-        font-size: 1.4rem;
+        font-size: 1.6rem; /*1.4rem*/
     }
 
     .bcta {
@@ -458,19 +358,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 20px;
+    padding: 50px 50px;
     border-radius: 30px;
     position: relative;
     background: transparent;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-@media screen and (max-width: 568px)
-{
-    .nmcard-w .nmcard {
-        padding: 20px 20px;
-    }
 }
 
 .nmcard-w .nmcard .nmcard__text {
@@ -484,6 +377,8 @@ body {
     font-size: 24px;
 }
 
+.fa-check-circle-o {color: #162A48;}
+
 /* inset */
 .nmcard.inset {
     box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #fff;
@@ -495,79 +390,6 @@ body {
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5), inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #fff;
     background: linear-gradient(318.32deg, rgba(163, 177, 198, 0.1) 0%, rgba(163, 177, 198, 0.1) 55%, rgba(163, 177, 198, 0.25) 100%);
 }
-
-/*
-.banner .bannersec-bannertop {
-    position: relative;
-    width: 100%;
-    height: 96vh; /*56, 96 vh*//*
-    overflow: hidden;
-    background-image: url(https://Mil-House.github.io/Mil-House/img/shenqtest.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;*/
-
-    /*display: flex;
-    justify-content: space-between;
-    align-items: center;*/
-
-    /*animation: slide 10s infinite;*//*
-}
-
-.bannercontent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.bannercontent h1 {
-    color: white;
-    font-size: 60px;
-    letter-spacing: 16px;
-}
-
-.bannercontent a {
-    background: #0984e3;
-    padding: 10px 24px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 20px;
-}
-
-@keyframes slide {
-    0%{
-        background-image: url();
-    }
-    33%{
-        background-image: url();
-    }
-    67%{
-        background-image: url();
-    }
-}
-*/
-
-/*
-.banner
-{
-    position: relative;
-    min-height: 50vh;
-    background: url('https://Mil-House.github.io/Mil-House/img/imglow.jpeg');
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*background-attachment: fixed;*//*
-}
-
-.banner {
-    padding: 0;
-}
-*/
 
 .about_txt {
     padding: 60px 80px 10px 80px;
@@ -599,11 +421,6 @@ body {
 
 @media (max-width: 991px)
 {
-    /*============== Sections Max & Min Width Start ===============*/
-    
-
-
-    /*============== Sections Max & Min Width End ===============*/
 
     .about_txt {
         padding: 60px 0px;
@@ -616,12 +433,6 @@ body {
     .about {
         padding: 20px 0px;
     }
-
-    /*
-    .about {
-        box-shadow: rgba(50, 50, 93, 0.25) -16px 30px 40px -12px inset;
-    }
-    */
 
     .contentBx {
         padding-right: 0;
@@ -638,10 +449,6 @@ body {
 {
 
     /*============== Sections Max & Min Width Start ===============*/
-    
-    /*section {
-        padding: 100px 50px;
-    }*/
 
     .about_txt {
         padding-bottom: 20px;
@@ -669,6 +476,10 @@ body {
 
     .contentBx {
         padding-right: 0;
+    }
+
+    .minw50 {
+        margin: 20px auto;
     }
 
     .w50 {
@@ -791,24 +602,6 @@ body {
     max-width: 100%;
 }
 
-/*============ Banner Text 
-.textBx {
-    position: absolute;
-    padding: 40px;
-}
-
-.textBx h2 {
-    font-size: 2.6em;
-    color: #fff;
-}
-
-.textBx h3 {
-    font-size: 1.4em;
-    color: #fff;
-}
-Banner Text ============*/
-
-
 
 /*============ About Us Block ============*/
 .heading {
@@ -844,12 +637,6 @@ Banner Text ============*/
     justify-content: space-between;
 }
 
-/*
-.contentBx {
-    padding-right: 30px;
-}
-*/
-
 .contentBx .sg { /* h3 */
     /*font-family: Arial, Helvetica, sans-serif;*/
     font-family: 'Poppins', sans-serif;
@@ -859,6 +646,58 @@ Banner Text ============*/
 .sgmillogo {
     font-family: 'Krona One', sans-serif;
     font-size: 2rem;
+}
+
+/*======------------------ Videoplayer ---------------======*/
+
+#embeddedVideoStats {border: 1px solid #1b6ef3; margin-top: -10px; margin-left: 20px; max-width: 90px;} /*rgb(85, 91, 255)*/
+#embeddedVideoStats #statElement:nth-child(2){visibility: hidden;}
+#embeddedVideoStats #statElement:nth-child(3){visibility: hidden;}
+
+.milvideo iframe {
+    width: 500px; /*500px*/
+    height: 281px; /*281px*/
+    border-radius: 18px;
+
+    /*box-shadow: rgb(85, 91, 255) 0px 0px 0px 2px;
+    box-shadow: 0px -4px 4px -4px #999, 0px 10px 10px -10px #999, -20px 0px 12px -20px rgb(85, 91, 255), 20px 0px 12px -20px rgb(85, 91, 255);*/
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px, -20px 0px 12px -22px #0083fe, 20px 0px 12px -22px #0083fe; /*rgb(85, 91, 255)*/
+}
+
+@media (max-width: 1619px)
+{
+    .nmcard-w .nmcard {padding: 30px;}
+
+    #embeddedVideoStats{visibility: hidden;}
+
+    .milvideo {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .milvideo iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 992px) 
+{
+    .nmwrapper-scnd {padding: 0 16px;}
+}
+
+@media (max-width: 568px)
+{
+    .nmcard-w .nmcard {padding: 20px;}
+}
+
+.minw50 {
+    min-width: 50%;
 }
 
 .w50 {
@@ -872,22 +711,8 @@ Banner Text ============*/
     --image-comparison-slider-handle-width: 50px;
 }
 
-/*
-body {
-    font-family: Helvetica, sans-serif;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-      align-items: center;
-    justify-content: center;
-}
-*/
-
 .about_txt {
     font-family: Arial, Helvetica, sans-serif;
-    /*border-top: 1px solid rgba(34, 34, 65, 0.3);*/
-    /*box-shadow: rgba(50, 50, 93, 0.25) 0 30px 40px -12px inset;*/
-    /*box-shadow: rgb(0, 0, 0) 16px(left) (top)3px 0px(razmitost) 1px inset;*/
     box-shadow: rgb(204, 219, 232) -1px 3px 6px 0px inset;
 
     background-image: url("https://Mil-House.github.io/Mil-House/img/Sun-Tornado.svg");
@@ -895,8 +720,6 @@ body {
 }
 
 .buildingstable {
-    /*box-shadow: rgba(50, 50, 93, 0.25) 0 1px 40px -18px inset;*/
-    /*box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset;*/
     box-shadow: rgb(204, 219, 232) -1px 3px 6px 0px inset;
 
     background-image: url("https://Mil-House.github.io/Mil-House/img/Sun-Tornado.svg");
@@ -912,8 +735,6 @@ body {
 
 .about {
     font-family: Arial, Helvetica, sans-serif;
-    /*box-shadow: rgba(50, 50, 93, 0.25) 0 1px 40px -12px inset;*/
-    /*box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset;*/
     box-shadow: rgb(204, 219, 232) -1px 3px 6px 0px inset;
 
     background-image: url("https://Mil-House.github.io/Mil-House/img/liquid-cheesea_about.svg");
@@ -948,9 +769,7 @@ body {
     height: 100%;
     overflow: hidden;
     z-index: 1;
-    transform: translateZ(0); /* This is in order to fix a Firefox bug, related to the 3D tilt effect */
-    /* transition: 0.25s cubic-bezier(.03,.98,.52,.99); */
-  
+    transform: translateZ(0);
 }
   
 #image-comparison-slider .img-wrapper img {
@@ -1012,7 +831,6 @@ body {
     align-items: center;
     user-select: none;
     z-index: 2;
-    /* transition: 0.25s cubic-bezier(.03,.98,.52,.99); */
 }
   
 #image-comparison-slider .handle-line {
@@ -1030,25 +848,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: rgba(0,0,0,0.5); */
 }
-
-/*
-@media (max-width: 768px) {
-    :root {
-      --image-comparison-slider-width: 90vw;
-    }
-}
-*/
 
 /*============ Photo Box Cards ============*/
 .services {
-    /*box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;*/
-    /*box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset;*/
     box-shadow: rgb(204, 219, 232) -1px 3px 6px 0px inset;
 
-    /*background-image: url("https://Mil-House.github.io/Mil-House/img/Liquid-Cheese1.svg");*/
-    /*background-image: url("https://Mil-House.github.io/Mil-House/img/liquid-chese_services.svg");*/
     background-color: #eef2f3;
     background-image: url("https://Mil-House.github.io/Mil-House/img/Wave_Line.svg");
     background-size: cover;
@@ -1085,7 +890,6 @@ body {
     bottom: -6px;
     width: 160px; /*120px*/
     height: 3px;
-    /*background: #21242cbd;*/
     background: radial-gradient(circle, #21242cbd 55%, #f5f5f500 100%);
     background-repeat: no-repeat;
 }
@@ -1119,7 +923,7 @@ body {
     flex-wrap: wrap;
     transform-style: preserve-3d;
     width: 1100px;
-    margin-top: -30px; /*added 4me*/
+    margin-top: -30px;
 }
 
 .sectionblock .icard {
@@ -1161,7 +965,6 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    /*box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;*/
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -1184,7 +987,8 @@ body {
 .sectionblock .icard .ibox .icontentBx div {
     transform-style: preserve-3d;
     padding: 20px;
-    background: linear-gradient(45deg, #09203F, #A890FE); /*(45deg, #fe0061, #ffeb3b);*/ /*#2E3192, #1BFFFF*/
+    /*background: linear-gradient(45deg, #09203F, #A890FE);*/
+    background: linear-gradient(45deg, #09203F, #52E5E7);
     transform: translateZ(100px);
     border-radius: 8px;
 }
@@ -1298,7 +1102,7 @@ body {
     }
     
     .mobcard-mobim {
-        border-top: 6px solid rgb(141, 111, 247);
+        border-top: 6px solid #0098fe; /*rgb(141, 111, 247)*/
         display: block;
         width: 100%;
         height: 25rem;
@@ -1311,7 +1115,7 @@ body {
     }
     
     .mobcard-mobhead {
-        font-size: 2.4rem; /*2.6rem*/
+        font-size: 2.1rem; /*2.4rem*/
         font-weight: 500;
         /*color: #0d0d0d;*/
         color: #d7dcf0;
@@ -1319,17 +1123,24 @@ body {
     }
 
     .mobsubhead {
-        font-size: 1.6rem;
+        display: inline-block;
+        font-size: 1.75rem;
         font-weight: 500;
+
+        box-shadow: rgba(100, 100, 100, 0.15) 0px 2px 8px;
+        border: 2px solid rgba( 255, 255, 255, 0.18 );
+        padding: 2px 6px;
+        margin-left: 2px;
+        border-radius: 0.6rem;
     }
     
     .mobcard-mobtext {
-        font-size: 1.6rem;
+        font-size: 1.5rem; /*1.6rem*/
         letter-spacing: 0.1rem;
         line-height: 1.7;
         /*color: #3d3d3d;*/
         color: #a0a0a0;
-        margin-bottom: 2.5rem; /*visit button off (unable)*/
+        margin-bottom: 1.4rem; /*2.5rem visit button off (unable)*/
     }
 
     .atxtdec {
@@ -1339,7 +1150,7 @@ body {
     .mobcard-butn {
         display: block;
         width: 100%;
-        padding: 1.2rem; /*visit button off (unable)*/
+        padding: 0.7rem; /*0.9rem visit button off (unable)*/
         font-size: 2rem;
         text-align: center;
         color: #3363ff;
@@ -1372,17 +1183,19 @@ body {
     .mobcard-butn:active span {
         margin-left: 1.5rem;
     }
+
+    .atxtdec .mobcard-butn b {
+        position: relative; 
+        font-size: 1.9rem;
+        bottom: 3px;
+    }
 }
 
 @media (max-width: 706px)
 {
     .mobcard img {
-        border-bottom: 26px solid rgb(191, 174, 255);
+        border-bottom: 26px solid #09c6f9; /*rgb(191, 174, 255)*/
     }
-
-    /*.mobcard .imsz {
-        border-bottom: 19px solid rgb(191, 174, 255);
-    }*/
 
     .mobcard-mobim {
         height: 100%;
@@ -1390,12 +1203,60 @@ body {
 }
 
 @media only screen and (max-width: 60em) {
-    /*.services {
-        padding: 3rem;
-    }*/
 
     .mobgrid {
-        grid-gap: 3rem;
+        grid-gap: 2rem;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .mobcard-mobhead {font-size: 1.85rem;}
+
+
+    .mobsubhead {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .mobcard-mobtext {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 319px)
+{
+    .services {
+        padding: 60px 10px;
+    }
+
+    .mobgrid {
+        display: block;
+        width: 100%;
+    }
+
+    .mobgrid-mobitem {margin-bottom: 20px;}
+    .mobgrid-mobitem:nth-child(6) {margin-bottom: 0px;}
+
+    .mobcard-mobhead {font-size: 1.7rem;}
+    .hsubtxtbr{display: none;}
+
+    .mobsubhead {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 2px 3px;
+    }
+
+    .mobcard-mobtext {
+        font-size: 1.3rem;
+        /*margin-bottom: 1.4rem;*/
+    }
+
+    .mobcard-butn {padding: 0.6rem;}
+    .atxtdec .mobcard-butn b {
+        position: relative;
+        font-size: 1.8rem;
+        bottom: 3px;
     }
 }
 
@@ -1405,7 +1266,7 @@ body {
 .buildingstable {
     box-sizing: border-box;
     background-color: #fcfcfd;
-    padding: 10px 0;
+    padding: 20px 0 10px 0; /*padding: 10px 0;*/
 }
 
 table {
@@ -1414,8 +1275,6 @@ table {
 
 .Btable-Bcontainer {
     color: #4f546c;
-    /*background-color: #f9fbff;*/
-    /*background-color: #fcfcfd;*/
     font-family: Mukta, sans-serif;
     font-size: 1.5rem; /*0.9rem*/
     padding: 0 2% 0 2%;/*0 2% 0 2%*/
@@ -1423,7 +1282,7 @@ table {
 }
 
 table thead {
-    border-top: 4px solid rgba(151, 122, 255);
+    border-top: 4px solid #00b6fe; /*rgba(151, 122, 255)*/
     border-radius: 20px 20px 0 0;
 }
 
@@ -1458,7 +1317,6 @@ table tbody .str td:nth-child(5){
 }
 
 .Btable tbody tr td {
-    /*padding: 1.26rem 3rem;*/ /*1rem(1.8rem) 2rem*/
     padding: 1.26rem 4rem 1.26rem 2rem;
     text-align: center;
     font-size: 1.75rem;
@@ -1514,8 +1372,7 @@ table tr:nth-child(even) {
 @media (min-width: 769px) {
     tbody tr:hover {
         color: #1b1b1b;
-        background-color: rgba(126, 111, 207, 0.3);
-        /*box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;*/
+        background-color: hsla(197, 50%, 62%, 0.3); /*rgba(126, 111, 207, 0.3);*/
         transform: scale(1.02);
         cursor: pointer;
         transition: 0.4s;
@@ -1528,104 +1385,6 @@ table tr:nth-child(even) {
     .Btable-Bcontainer {
         display: none;
     }
-    
-    /*
-    table {
-        overflow: visible;
-    }
-
-    .Btable {
-        box-shadow: none;
-    }
-
-    .Btable tbody tr:nth-child(1){
-        border-radius: 8px;
-    }
-
-    .Btable tbody tr:nth-child(10){
-        border-radius: 0 0 8px 8px;
-    }
-
-    .Btable tbody .ftr td:nth-child(1){
-        border-radius: 8px 8px 0 0;
-    }
-
-    .Btable tbody .str td:nth-child(5){
-        border-radius: 0 0 8px 8px;
-    }
-
-    .Btable-Bcontainer {
-        background-color: rgba(255, 255, 255, 0);
-    }
-
-    table tbody .str td:nth-child(1){
-        border-radius: 0px;
-    }
-
-    .Btable thead {
-        display: none;
-    }
-
-    .Btable, .Btable tbody, .Btable tr, .Btable td {
-        display: block;
-        width: 100%;
-    }
-
-    .Btable tr {
-        margin-bottom: 16px;
-        border: 1px solid #ececec;
-        box-shadow: 0 5px 10px #e1e5ee;
-    }
-    */
-
-    /*dtxt*//*
-    .Btable tbody tr .dtxt {
-        text-align: center;
-        position: relative;
-        font-weight: 700;
-        font-size: 1.7rem;
-    }
-
-    .Btable tbody tr .tdtext {
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-        border: 1px solid #ececec;
-    }
-
-    .Btable td:before {
-        content: attr(data-label);
-        font-weight: 900;
-        font-size: 1.7rem;
-        text-align: center;
-    }
-
-    .Btable .tdtext:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        width: 50%;
-        padding-left: 20px;
-        font-weight: 900;
-        font-size: 1.6rem;
-        text-align: left;
-    }
-
-
-    table tr td:nth-child(1) {
-        background-color: #222222;
-        color: white;
-        box-shadow: 0 5px 10px #e1e5ee;
-    }
-
-    table tr:nth-child(even) {
-        background-color: #fff;
-    }
-
-    .Btable tbody tr td:nth-child(even){
-        background-color: #f4f6fb;
-    }
-    */
 }
 
 /*================ Mobile Tables ================*/
@@ -1638,30 +1397,7 @@ table tr:nth-child(even) {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-
-    /* Center slide text vertically *//*
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;*/
 }
-
-/*
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-*/
 
 .swiper-pagination {
     position: relative;
@@ -1674,11 +1410,7 @@ table tr:nth-child(even) {
     max-width: 800px;
 }
 
-/*.Swipertable .swiper-container .swiper-wrapper .swiper-slide {
-    overflow-x: hidden;
-}-------------------------------------------------------------------?????????????????????????????????????????????????? */
-
-.swiper-container { /*Added 22.10.2021*/
+.swiper-container {
     overflow: hidden;
 }
 
@@ -1700,7 +1432,7 @@ table tr:nth-child(even) {
 @media screen and (max-width: 768px) 
 {
     .table {
-    display: block; 
+        display: block; 
     } 
 }
   
@@ -1727,6 +1459,12 @@ table tr:nth-child(even) {
 .row.orange {
     border-radius: 12px 12px 0 0;
     background: #FFA500; 
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #045de9; /*rgb(85 91 255)*/
+    background-image: linear-gradient(200deg, #045de9 0%, #09c6f9 74%);
 }
 
 @media screen and (max-width: 768px) 
@@ -1792,8 +1530,8 @@ table tr:nth-child(even) {
     
 @media screen and (max-width: 768px) {
     .cell {
-    padding: 4px 16px; /*2px 16px*/
-    display: block; 
+        padding: 4px 16px; /*2px 16px*/
+        display: block; 
     } 
 }
 
@@ -1839,6 +1577,14 @@ table tr:nth-child(even) {
 
 .Swipertabletxt {
     padding-bottom: 10px;
+}
+
+@media (max-width: 767px) /*and (orientation: portrait)*/
+{
+    .mobiletable {font-size: 1.75rem !important;}
+    .mobiletable .row {font-size: 1.75rem !important;}
+    .mobiletable .row .cell {font-size: 1.75rem !important;}
+    .mobiletable .row .cell span {font-size: 1.75rem !important;}
 }
 
 /*--================= Our Service Privilage =================--*/
@@ -1918,7 +1664,7 @@ table tr:nth-child(even) {
 .owl-dot {
     width: 14px;
     height: 14px;
-    background: #808080 !important;
+    background: rgba(0, 0, 0, 0.2) !important;
     margin: 0 6px;
     border-radius: 14px;
     outline: none;
@@ -1971,6 +1717,7 @@ table tr:nth-child(even) {
 }
 
 .phnum {
+    display: inline-block;
     color: #808080;
     letter-spacing: 1px;
     font-weight: 500;
@@ -1986,24 +1733,21 @@ table tr:nth-child(even) {
 }
 
 .phnum a:hover {
-    color: rgb(129, 94, 255);
+    color: #0083fe; /*rgb(129, 94, 255)*/
 }
 
 /*============ Section Work ============*/
 .work {
     font-family: 'Poppins', sans-serif;
     padding: 60px 30px;
-    /*background-color: #f7f7fc;*/
-    /*box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset;*/
     box-shadow: rgb(204, 219, 232) -1px 3px 6px 0px inset;
 
-    /*background-image: url("https://Mil-House.github.io/Mil-House/img/Liquid-Cheesee.svg");*/
     background-image: url("https://Mil-House.github.io/Mil-House/img/liquid-cheese_work.svg");
     background-size: cover;
 }
 
 .skillcards {
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -2015,12 +1759,19 @@ table tr:nth-child(even) {
     border-radius: 8px;
     padding: 30px;
     margin: 2rem 0; /*margin-bottom*/
-    max-width: 400px;
+    max-width: 100%;
     background-color: #fff;
     background-image: url("https://Mil-House.github.io/Mil-House/img/stacked-waves-haikei2.svg"); /*blob-scene...*/
     background-size: cover;
 
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@media (max-width: 400px)
+{
+    .skillcard {
+        padding: 20px;
+    }
 }
 
 .skillcard.caqua {
@@ -2035,15 +1786,11 @@ table tr:nth-child(even) {
 .skillcard.corange {
     border-top: 5px solid hsl(34, 97%, 64%);
 }
-/*
-.skillcard.corange.cor {
-    border-top: 5px solid rgba(151, 122, 255);
+
+.skillcard.cor { /*Aded 11.01.2022*/
+    margin: 0;
 }
 
-.skillcard.cred.cor {
-    border-top: 5px solid rgba(151, 122, 255);
-}
-*/
 .skillcard.cblue {
     border-top: 5px solid hsl(212, 86%, 64%);
     margin: 0;
@@ -2068,7 +1815,6 @@ table tr:nth-child(even) {
     font-size: 2.5rem;
     letter-spacing: 1px;
 
-    /*box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;*/
     border-bottom: 1px solid rgba(27, 31, 35, 0.04);
     padding-bottom: 4px;
     margin-bottom: 4px;
@@ -2080,67 +1826,18 @@ table tr:nth-child(even) {
     color: hsl(229, 6%, 46%);
 }
 
-/*
-.workcontact {
-    display: flex;
-    margin-top: 20px;
+@media (max-width: 310px)
+{
+    .skillcard {padding: 20px;}
+    .phnum a {font-size: 1.6rem;}
 }
 
-.workcntspace {
-    padding-top: 10px;
+@media (max-width: 500px)
+{
+    .work {padding: 60px 0 10px 0;} /*60px 0 60px 0*/
+    .headings__sectionpadding {padding: 0 30px 0 30px;}
+    .skillcards__sectionpadding {padding: 0 20px 0 20px;}
 }
-
-.workcontact img {
-    margin-left: auto;
-}
-
-.wkcnt {
-    padding: 4px 12px;
-    border: 2px solid #cfc;
-    background: #00a70050;
-    border-radius: 8px;
-}
-
-.workcntspace .card_amsativ {
-    font-family: 'Montserrat', sans-serif;
-    display: inline-block;
-    /*margin-left: 50px;*//*
-    padding: 4px 10px;
-    margin-bottom: 12px;
-    text-decoration: none;
-    border: 2px solid rgba( 255, 255, 255, 0.18 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.24 );
-    border-radius: 8px 0 0 8px;
-    color: #464646;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.workcntspace .actual {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #00a70050;
-    padding: 4px 5px;
-    text-decoration: none;
-    border: 2px solid rgba( 255, 255, 255, 0.18 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.24 );
-    border-radius: 0 8px 8px 0;
-    color: #464646;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.workcntspace .notactual {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #ff000050;
-    padding: 4px 5px;
-    text-decoration: none;
-    border: 2px solid rgba( 255, 255, 255, 0.18 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.24 );
-    border-radius: 0 8px 8px 0;
-    color: #464646;
-    font-weight: 600;
-}
-*/
 
 @media (max-width: 1199px)
 {
@@ -2149,16 +1846,16 @@ table tr:nth-child(even) {
     }
 }
 
-@media only screen and (min-width: 1200px)
+@media only screen and (min-width: 1450px) /*1200px*/
 {
     .skillcards {
         flex-direction: row;
+        display: flex;
     }
 
-    /* .skillcard {
-            margin: 2rem;
-        } 
-    */
+    .skillcard {
+        max-width: 400px;
+    }
 
     .skillcard.caqua {
         margin: 2rem;
@@ -2175,4 +1872,20 @@ table tr:nth-child(even) {
     .skillcard.corange {
         margin: 1.4rem;
     }
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+    width: 1rem;
+    background-color: #e2e2e2;
+    /*border-radius: .5rem;*/
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #b4b4b4;
+    /*border-radius: .2rem;*/
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #9f9f9f;
 }
