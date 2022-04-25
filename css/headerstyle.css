@@ -534,7 +534,9 @@ header {
     /*============ Mobile bag Menu (Start) ============*/
 
     .nav-link-bag {
-        background: url("https://Mil-House.github.io/Mil-House/img/bag.svg") center no-repeat;
+        /*background: url("https://Mil-House.github.io/Mil-House/img/bag.svg") center no-repeat;*/
+        background: url("https://Mil-House.github.io/milimg/img/mhome.svg") center no-repeat;
+        width: 30px;
     }
 
     .operation .minibagmenu {
@@ -742,21 +744,6 @@ header {
 
     .action .langmenu {
         display: none;
-    }
-}
-
-@media screen and (max-width: 735px)
-{
-    .milhouse-banner {
-        background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_pro_small.jpg");
-    }
-
-    .milhouse {
-        background: url("https://Mil-House.github.io/Mil-House/img/iphone_11_small.jpg");
-    }
-
-    .watch {
-        background: url("https://Mil-House.github.io/Mil-House/img/watch_small.jpg");
     }
 }
 
